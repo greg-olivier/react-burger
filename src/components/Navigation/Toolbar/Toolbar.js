@@ -1,7 +1,14 @@
 import React from 'react';
+import classes from './Toolbar.css';
 
-const toolbar = () => (
-    <div></div>
+const toolbar = (props) => (
+    <header className={classes.ToolBar}>
+        <div>MENU</div>
+        <div>LOGO</div>
+        <nav>
+            ...
+        </nav>
+    </header>
 );
 
 
