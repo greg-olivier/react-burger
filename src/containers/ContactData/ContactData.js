@@ -19,14 +19,14 @@ class ContactData extends Component {
         event.preventDefault();
         this.setState({loading: true});
         const data = {
-           ingredients : this.props.ingredients,
-           customer: {
-               name: this.state.name,
-               address: this.state.address,
-               email: this.state.email
-           },
-           deliveryMethod: 'fastest'
-       };
+            ingredients : this.props.ingredients,
+            price: this.props.price,
+            name: this.state.name,
+            address: this.state.address,
+            email: this.state.email,
+            deliveryMethod: 'fastest'
+        };
+
 
        axiosOrders.post('/orders.json', data)
            .then( res => {

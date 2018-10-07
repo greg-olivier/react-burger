@@ -4,8 +4,8 @@ const axiosOrders = axios.create({
     baseURL: 'https://my-react-burger-bfa8e.firebaseio.com'
 });
 
-
-/*axiosOrders.interceptors.request.use(req => {
+/*
+axiosOrders.interceptors.request.use(req => {
     console.log({reqFromInstance: req});
     return req;
 }, err => {
